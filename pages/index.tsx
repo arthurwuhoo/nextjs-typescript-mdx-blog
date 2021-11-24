@@ -31,7 +31,7 @@ export const Index = ({ posts }: IndexProps): JSX.Element => {
 
       {posts.map((post) => (
         <article key={post.slug} className="mt-12">
-          <p className="mb-1 text-sm text-gray-500 dark:text-gray-400">
+          <p className="mb-1 text-sm text-gray-100 dark:text-gray-400">
             {format(parseISO(post.date), 'MMMM dd, yyyy')}
           </p>
           <h1 className="mb-2 text-xl">
